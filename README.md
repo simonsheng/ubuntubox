@@ -50,5 +50,14 @@ Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+# better display 
+colorscheme evening
+
+# highlight cursor line
+set cursorline
+highlight CursorLine term=bold cterm=bold ctermbg=LightBlue
+
+# set up line number
 set relativenumber
+
 ```
