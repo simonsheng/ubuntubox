@@ -12,25 +12,26 @@ sudo apt install tmux
 
 ## vim configration
 
-[Vundle vim package manager](https://github.com/VundleVim/Vundle.vim) is our package manager
+- [Vundle vim package manager](https://github.com/VundleVim/Vundle.vim) is our package manager
 
-Install it first by git clone 
-
+- Install it first by git clone 
+```
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
 
 ### code tools of vim
 
-[emmet -- html/css tool](https://emmet.io/) has vim version which is [emmet for vim](https://github.com/mattn/emmet-vim)
-[auto-pairs](https://github.com/jiangmiao/auto-pairs)
+- [emmet -- html/css tool](https://emmet.io/) has vim version which is [emmet for vim](https://github.com/mattn/emmet-vim)
+- [auto-pairs](https://github.com/jiangmiao/auto-pairs)
 
 ### directory tools of vim
 
-[nerdtree](https://github.com/scrooloose/nerdtree)
+- [nerdtree](https://github.com/scrooloose/nerdtree)
 
 ### vim itself
 
-[vim-airline](https://github.com/vim-airline/vim-airline)
-[vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
+- [vim-airline](https://github.com/vim-airline/vim-airline)
+- [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
 
 ```
 set nocompatible              " be iMproved, required
