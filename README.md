@@ -126,6 +126,11 @@ sudo chmod a+x /usr/bin/light-locker
 ```
 sudo apt install -y lubuntu-desktop
 ```
+## install chrome
+
+```
+sudo apt-get install chromium-browser
+```
 
 ## golang installation
 
