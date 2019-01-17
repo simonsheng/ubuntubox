@@ -9,6 +9,7 @@ sudo apt update
 sudo apt install git
 sudo apt install tmux
 sudo apt install wget
+sudo apt install make
 ```
 ## [remount home](https://help.ubuntu.com/community/Partitioning/Home/Moving)
 
@@ -133,6 +134,12 @@ echo 'if  -d $HOME/go/src/k8s.io/kubernetes/_output/local/bi["n/linux/amd64" ] ;
 echo '    PATH=$HOME/go/src/k8s.io/kubernetes/_output/local"/bin/linux/amd64:$PATH"' >> $HOME/.profile
 echo 'fi' >> $HOME/.profile
 ```
+## install kvm2
+
+```
+
+```
+
 ## minikube
 
 ```
