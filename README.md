@@ -78,15 +78,34 @@ highlight CursorLine term=bold cterm=bold ctermbg=LightBlue
 set relativenumber
 
 ```
-## Install xRDP
+## [Install xRDP](https://www.hiroom2.com/2018/05/07/ubuntu-1804-xrdp-lxde-en/)
 
 ```
-sudo apt update
 sudo apt install -y xrdp
-sudo apt install -y lubuntu-desktop
+sudo sed -e 's/^new_cursors=true/new_cursors=false/g' \
+           -i /etc/xrdp/xrdp.ini
+sudo systemctl enable xrdp
+sudo systemctl restart xrdp
+echo "lxsession -s Lubuntu -e LXDE" > ~/.xsession
+sudo cp /usr/bin/light-locker /usr/bin/light-locker.orig
+cat <<EOF | sudo tee /usr/bin/light-locker
+#!/bin/sh
 
-echo xfce4-session > ~/.xsession
-sudo service xrdp restart
+# The light-locker uses XDG_SESSION_PATH provided by lightdm.
+if [ ! -z "\${XDG_SESSION_PATH}" ]; then
+  /usr/bin/light-locker.orig
+else
+  # Disable light-locker in XRDP.
+  true
+fi
+EOF
+sudo chmod a+x /usr/bin/light-locker
+```
+
+## [Install lxdp](https://www.hiroom2.com/2018/05/06/ubuntu-1804-lxde-en/)
+
+```
+sudo apt install -y lubuntu-desktop
 ```
 
 ## golang installation
