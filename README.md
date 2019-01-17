@@ -130,10 +130,11 @@ source ~/.profile
 go get -d k8s.io/kubernetes
 cd $GOPATH/src/k8s.io/kubernetes
 make
-echo '# set PATH so it includes kubernetes build commands' >> $HOME/.profile
-echo 'if  -d $HOME/go/src/k8s.io/kubernetes/_output/local/bi["n/linux/amd64" ] ; then' >> $HOME/.profile
-echo '    PATH=$HOME/go/src/k8s.io/kubernetes/_output/local"/bin/linux/amd64:$PATH"' >> $HOME/.profile
-echo 'fi' >> $HOME/.profile
+echo '# set PATH so it includes kubernetes build commands' >> ~/.profile
+echo 'if  [ -d "$HOME/go/src/k8s.io/kubernetes/_output/local/bin/linux/amd64" ] ; then' >> ~/.profile
+echo '    PATH=$HOME/go/src/k8s.io/kubernetes/_output/local"/bin/linux/amd64:$PATH"' >> ~/.profile
+echo 'fi' >> ~/.profile
+source ~/.profile
 ```
 ## install kvm2
 
