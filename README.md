@@ -229,3 +229,12 @@ sudo apt-get install docker-ce
 sudo usermod -aG docker $USER
 sudo groupadd docker
 ```
+
+## change your docker iamges location
+
+```
+sudo echo '{' >> /etc/docker/daemon.json
+sudo echo '     "graph": "/home/simon/docker"' >> /etc/docker/daemon.json
+sudo echo '}' >> /etc/docker/daemon.json
+sudo service docker restart
+```
