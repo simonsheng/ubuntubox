@@ -144,11 +144,19 @@ source ~/.profile
 go get -d k8s.io/kubernetes
 cd $GOPATH/src/k8s.io/kubernetes
 make
+# for bash
 echo '# set PATH so it includes kubernetes build commands' >> ~/.profile
 echo 'if  [ -d "$HOME/go/src/k8s.io/kubernetes/_output/local/bin/linux/amd64" ] ; then' >> ~/.profile
 echo '    PATH=$HOME/go/src/k8s.io/kubernetes/_output/local"/bin/linux/amd64:$PATH"' >> ~/.profile
 echo 'fi' >> ~/.profile
 source ~/.profile
+
+# for zsh
+echo '# set PATH so it includes kubernetes build commands' >> ~/.zshrc
+echo 'if  [ -d "$HOME/go/src/k8s.io/kubernetes/_output/local/bin/linux/amd64" ] ; then' >> ~/.zshrc
+echo '    PATH=$HOME/go/src/k8s.io/kubernetes/_output/local"/bin/linux/amd64:$PATH"' >> ~/.zshrc
+echo 'fi' >> ~/.zshrc
+sudo ln -s /home/simon/go/src/k8s.io/kubernetes/_output/local/bin/linux/amd64/kubectl /usr/local/bin/kubectl
 ```
 ## install kvm2
 
