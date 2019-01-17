@@ -62,6 +62,17 @@ highlight CursorLine term=bold cterm=bold ctermbg=LightBlue
 set relativenumber
 
 ```
+## Install xRDP
+
+```
+sudo apt update
+sudo apt install xrdp
+sudo apt install xfce4
+sudo apt-get install xfce4-terminal tango-icon-theme
+echo xfce4-session > ~/.xsession
+sudo service xrdp restart
+```
+
 ## golang installation
 
 ```
@@ -101,4 +112,12 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 minikube config set vm-driver kvm2
 minikube start
 ```
+## build minikube from source code
 
+```
+sudo apt update
+sudo atp install tar wget gcc git python
+go get -d k8s.io/minikube
+cd $GOPATH/src/k8s.io/minikube
+make
+```
