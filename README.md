@@ -112,16 +112,15 @@ sudo apt install -y lubuntu-desktop
 
 ```
 wget https://dl.google.com/go/go1.11.4.linux-amd64.tar.gz
-sudo rm /usr/lib/go
+sudo rm -rf /usr/lib/go
 sudo rm /usr/bin/go
 sudo rm /usr/bin/gofmt
-sudo mkdir /usr/lib
 sudo tar xvf go1.11.4.linux-amd64.tar.gz -C /usr/lib
 sudo mv /usr/lib/go /usr/lib/go1.11
 sudo update-alternatives --install /usr/bin/go go /usr/lib/go1.11/bin/go 1101
 sudo update-alternatives --install /usr/bin/gofmt gofmt /usr/lib/go1.11/bin/gofmt 1101
-sudo echo 'export GOPATH="$HOME/go"' >> $HOME/.profile
-source $HOME/.profile
+sudo echo 'export GOPATH="$HOME/go"' >> ~/.profile
+source ~/.profile
 ```
 ## compile kuberntes and use all build commands
 
