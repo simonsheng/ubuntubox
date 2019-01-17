@@ -12,6 +12,21 @@ sudo apt install wget
 ```
 ## [remount home](https://help.ubuntu.com/community/Partitioning/Home/Moving)
 
+```
+dmesg | grep SCSI
+mkdir /media/home
+fdisk /dev/sdc
+n -> p -> w
+sudo mkfs.ext4 /dev/sdc1
+
+sudo cp /etc/fstab /etc/fstab.$(date +%Y-%m-%d)
+cmp /etc/fstab /etc/fstab.$(date +%Y-%m-%d)
+sudo rsync -aXS --exclude='/*/.gvfs' /home/. /media/home/.
+
+sudo blkid
+```
+Add /etc/sdc1 to fstab
+
 ## vim configration
 
 - [Vundle vim package manager](https://github.com/VundleVim/Vundle.vim) is our package manager
