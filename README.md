@@ -10,6 +10,7 @@ sudo apt install git
 sudo apt install tmux
 sudo apt install wget
 ```
+## [remount home](https://help.ubuntu.com/community/Partitioning/Home/Moving)
 
 ## vim configration
 
