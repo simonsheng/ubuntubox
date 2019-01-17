@@ -8,6 +8,7 @@ All settings of a new Ubuntu Box
 sudo apt update
 sudo apt install git
 sudo apt install tmux
+sudo apt install wget
 ```
 
 ## vim configration
@@ -60,4 +61,30 @@ highlight CursorLine term=bold cterm=bold ctermbg=LightBlue
 " set up line number
 set relativenumber
 
+```
+## golang installation
+
+```
+wget https://dl.google.com/go/go1.11.4.linux-amd64.tar.gz
+sudo rm /usr/lib/go
+sudo rm /usr/bin/go
+sudo rm /usr/bin/gofmt
+sudo mkdir /usr/lib
+sudo tar xvf go1.11.4.linux-amd64.tar.gz -C /usr/lib
+sudo mv /usr/lib/go /usr/lib/go1.11
+sudo update-alternatives --install /usr/bin/go go /usr/lib/go1.11/bin/go 1101
+sudo update-alternatives --install /usr/bin/gofmt gofmt /usr/lib/go1.11/bin/gofmt 1101
+sudo echo 'export GOPATH="$HOME/go"' >> $HOME/.profile
+source $HOME/.profile
+```
+## compile kuberntes and use all build commands
+
+```
+go get -d k8s.io/kubernetes
+cd $GOPATH/src/k8s.io/kubernetes
+make
+echo '# set PATH so it includes kubernetes build commands' >> $HOME/.profile
+echo 'if  -d $HOME/go/src/k8s.io/kubernetes/_output/local/bi["n/linux/amd64" ] ; then' >> $HOME/.profile
+echo '    PATH=$HOME/go/src/k8s.io/kubernetes/_output/local"/bin/linux/amd64:$PATH"' >> $HOME/.profile
+echo 'fi' >> $HOME/.profile
 ```
