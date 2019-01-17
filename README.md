@@ -11,6 +11,7 @@ sudo apt install tmux
 sudo apt install wget
 sudo apt install make
 sudo apt install build-essential
+sudo apt install zsh
 ```
 ## [remount home](https://help.ubuntu.com/community/Partitioning/Home/Moving)
 
@@ -79,6 +80,19 @@ highlight CursorLine term=bold cterm=bold ctermbg=LightBlue
 " set up line number
 set relativenumber
 
+```
+## [manage zsh](https://github.com/robbyrussell/oh-my-zsh)
+
+```
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+chsh -s /bin/zsh
+```
+
+## [power font](https://github.com/powerline/fonts)
+
+```
+sudo apt-get install fonts-powerline
 ```
 ## [Install xRDP](https://www.hiroom2.com/2018/05/07/ubuntu-1804-xrdp-lxde-en/)
 
