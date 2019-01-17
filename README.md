@@ -82,9 +82,9 @@ set relativenumber
 
 ```
 sudo apt update
-sudo apt install xrdp
-sudo apt install xfce4
-sudo apt-get install xfce4-terminal tango-icon-theme
+sudo apt install -y xrdp
+sudo apt install -y lubuntu-desktop
+
 echo xfce4-session > ~/.xsession
 sudo service xrdp restart
 ```
