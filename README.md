@@ -79,6 +79,7 @@ highlight CursorLine term=bold cterm=bold ctermbg=LightBlue
 
 " set up line number
 set relativenumber
+set number
 " you'd better install powerline font
 let g:airline_theme='atomic'
 ```
