@@ -21,3 +21,10 @@
 - Ctrl + b  " split windows horizontally
 - Ctrl + d close the bash shell
 - Ctrl + b  d detached the session
+
+## grep
+
+- grep -r 'location' -e 'pattern'
+- grep -l only list file name
+- grep -n list line number
+- grep -w whole word
