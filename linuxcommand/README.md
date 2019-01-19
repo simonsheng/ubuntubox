@@ -11,6 +11,7 @@
 
 - tmux new -s session name
 - tmux list-clients
+- tmux list-sessions
 - tmux attach-session -t session name or tmux attach -t session name
 - Ctrl + b  c create new window
 - Ctrl + b , rename window
