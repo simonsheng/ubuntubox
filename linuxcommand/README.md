@@ -30,3 +30,4 @@
 - grep -w whole word
 
 ## [jid](https://github.com/simeji/jid) & [jq](https://stedolan.github.io/jq/)
+## lsb_release
