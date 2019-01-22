@@ -28,3 +28,5 @@
 - grep -l only list file name
 - grep -n list line number
 - grep -w whole word
+
+## [jid](https://github.com/simeji/jid) & [jq](https://stedolan.github.io/jq/)
