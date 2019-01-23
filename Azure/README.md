@@ -9,3 +9,10 @@ sudo apt-key --keyring /etc/apt/trusted.gpg.d/Microsoft.gpg adv \
      --keyserver packages.microsoft.com \
      --recv-keys BC528686B50D79E339D3721CEB3E94ADBE1229CF
  ```
+## add autocomplete to azuer cli
+- Get the completions for bash from the Azure CLI git repo and store this file somewhere your zsh startup script can find it: https://raw.githubusercontent.com/Azure/azure-cli/dev/az.completion
+
+- Enable bash autocompletions in zsh (if it's not enabled already) [1]: 
+```autoload -U +X bashcompinit && bashcompinit```
+
+- ```source /path/to/az.completion``` (you will likely want this in your startup file for zsh also).
