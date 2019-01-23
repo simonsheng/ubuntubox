@@ -239,3 +239,19 @@ sudo echo '     "graph": "/home/simon/docker"' >> /etc/docker/daemon.json
 sudo echo '}' >> /etc/docker/daemon.json
 sudo service docker restart
 ```
+## oracle java
+
+- copy tar ball to the box /usr/lib
+```
+sudo tar xf tar-ball -C /usr/lib
+```
+run the script 
+
+```
+#!/bin/zsh
+for file in /usr/lib/jdk1.8.0_202/bin/**/*(.);
+do
+         fileName=$file:t
+         sudo update-alternatives --install "/usr/bin/$fileName" $fileName $file 1101;
+done
+```
