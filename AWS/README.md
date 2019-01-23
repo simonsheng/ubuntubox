@@ -11,3 +11,5 @@ export PATH=~/.local/bin:$PATH in .zshrc
 ```
 pip install awscli --upgrade --user
 ```
+
+## [Command Completion](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-completion.html)
