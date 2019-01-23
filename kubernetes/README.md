@@ -26,6 +26,7 @@ az aks create
 ## AWS
 ```
 https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html
+https://github.com/kubernetes-sigs/aws-iam-authenticator
 ```
 
 ## [Playing with kubectl output](https://gist.github.com/so0k/42313dbb3b547a0f51a547bb968696ba)
