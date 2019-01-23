@@ -16,3 +16,7 @@ sudo apt-key --keyring /etc/apt/trusted.gpg.d/Microsoft.gpg adv \
 ```autoload -U +X bashcompinit && bashcompinit```
 
 - ```source /path/to/az.completion``` (you will likely want this in your startup file for zsh also).
+
+## azure cli
+
+- az account list-locations
