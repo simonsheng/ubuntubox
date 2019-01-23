@@ -31,3 +31,6 @@
 
 ## [jid](https://github.com/simeji/jid) & [jq](https://stedolan.github.io/jq/)
 ## lsb_release
+
+## curl
+https://www.thegeekstuff.com/2012/04/curl-examples/?utm_source=feedburner
