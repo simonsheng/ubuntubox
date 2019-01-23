@@ -20,3 +20,4 @@ sudo apt-key --keyring /etc/apt/trusted.gpg.d/Microsoft.gpg adv \
 ## azure cli
 
 - az account list-locations
+- az aks create -g k-li-gp -n jersey-mike --ssh-key-value /home/simon/.ssh/id_rsa.pub
