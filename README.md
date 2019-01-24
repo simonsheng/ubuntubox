@@ -2,6 +2,10 @@
 
 All settings of a new Ubuntu Box
 
+## how to type ^M
+
+press <Ctrl> + <V> then press <Ctrl> + <M>
+
 ## Command need to run
 
 ```
