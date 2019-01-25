@@ -70,7 +70,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'mrk21/yaml-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -88,8 +87,7 @@ set number
 " you'd better install powerline font
 let g:airline_theme='atomic'
 " add yaml stuffs
-au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+set ts=2 sts=2 sw=2
 
 ```
 
