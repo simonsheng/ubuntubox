@@ -34,7 +34,7 @@ sudo blkid
 ```
 Add /etc/sdc1 to fstab
 
-## vim configration
+## [vim configration](#vim)
 
 - [Vundle vim package manager](https://github.com/VundleVim/Vundle.vim) is our package manager
 
