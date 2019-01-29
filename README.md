@@ -43,6 +43,7 @@ sudo apt-get install fonts-powerline
 ## [manage zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 ```
+command -v zsh | sudo tee -a /etc/shells
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 chsh -s $(which zsh)
