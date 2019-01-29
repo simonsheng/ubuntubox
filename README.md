@@ -121,7 +121,9 @@ sudo ln -s /home/simon/go/src/k8s.io/kubernetes/_output/local/bin/linux/amd64/ku
 ## install kvm2
 
 ```
-# Install libvirt and qemu-kvm on your system, e.g.
+grep --color vmx /proc/cpuinfo
+
+
 # Debian/Ubuntu (for older Debian/Ubuntu versions, you may have to use libvirt-bin instead of libvirt-clients and libvirt-daemon-system)
 sudo apt install libvirt-clients libvirt-daemon-system qemu-kvm
 # Fedora/CentOS/RHEL
