@@ -58,7 +58,8 @@ set number
 let g:airline_theme='atomic'
 " add yaml stuffs
 set ts=2 sts=2 sw=2
-autocmd FileType java set tags=~/.javasrctags,~/.javainsitectags
+autocmd FileType java set tags=~/.javasrctags,~/.javainsitectags,~/.javafoundationtags
+
 ```
 ### https://stackoverflow.com/questions/7830817/how-can-i-maximize-a-split-window
 
