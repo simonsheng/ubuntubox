@@ -16,6 +16,8 @@ sudo apt install wget
 sudo apt install make
 sudo apt install build-essential
 sudo apt install zsh
+sudo apt install exuberant-ctags
+ctags -R --language-force=java -f.javasrctags ~/javasrc
 ```
 ## [remount home](https://help.ubuntu.com/community/Partitioning/Home/Moving)
 
