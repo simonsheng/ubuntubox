@@ -36,6 +36,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'kien/ctrlp.vim'
+
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -54,6 +56,5 @@ set number
 let g:airline_theme='atomic'
 " add yaml stuffs
 set ts=2 sts=2 sw=2
-autocmd FileType java set tags=~/.javasrctags
-autocmd FileType java set tags+=~/.javainsitectags
+autocmd FileType java set tags=~/.javasrctags,~/.javainsitectags
 ```
