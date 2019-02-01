@@ -18,6 +18,8 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 - [nerdtree](https://github.com/scrooloose/nerdtree)
 
+### [Ctrl+p](https://github.com/kien/ctrlp.vim)
+
 ### vim itself
 
 - [vim-airline](https://github.com/vim-airline/vim-airline)
