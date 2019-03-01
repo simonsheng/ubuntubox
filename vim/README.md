@@ -39,7 +39,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
-
+Plugin 'fatih/vim-go'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
