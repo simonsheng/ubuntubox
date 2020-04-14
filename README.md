@@ -225,3 +225,40 @@ apt-get update
 apt-get install -y kubelet kubeadm kubectl
 apt-mark hold kubelet kubeadm kubectl
 ```
+
+## install java 
+```
+sudo update-alternatives --install /usr/bin/jaotc jaotc /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/ jaotc 1
+sudo update-alternatives --install /usr/bin/jarsigner jarsigner /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jarsigner 1
+sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/javac 1
+sudo update-alternatives --install /usr/bin/javap javap /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/javap 1
+sudo update-alternatives --install /usr/bin/jconsole jconsole /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jconsole 1
+sudo update-alternatives --install /usr/bin/jdeprscan jdeprscan /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jdeprscan 1
+sudo update-alternatives --install /usr/bin/jfr jfr /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jfr 1
+sudo update-alternatives --install /usr/bin/jimage jimage /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jimage 1
+sudo update-alternatives --install /usr/bin/jjs jjs /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jjs 1
+sudo update-alternatives --install /usr/bin/jmap jmap /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jmap 1
+sudo update-alternatives --install /usr/bin/jps jps /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jps 1
+sudo update-alternatives --install /usr/bin/jshell jshell /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jshell 1
+sudo update-alternatives --install /usr/bin/jstat jstat /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jstat 1
+sudo update-alternatives --install /usr/bin/keytool keytool /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/keytool 1
+sudo update-alternatives --install /usr/bin/rmic rmic /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/rmic 1
+sudo update-alternatives --install /usr/bin/rmiregistry rmiregistry /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/rmiregistry 1
+sudo update-alternatives --install /usr/bin/unpack200 unpack200 /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/unpack200 1
+sudo update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jar 1
+sudo update-alternatives --install /usr/bin/java java/usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/java 1
+sudo update-alternatives --install /usr/bin/javadoc javadoc /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/javadoc 1
+sudo update-alternatives --install /usr/bin/jcmd jcmd /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jcmd 1
+sudo update-alternatives --install /usr/bin/jdb jdb /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jdb 1
+sudo update-alternatives --install /usr/bin/jdeps jdeps /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jdeps 1
+sudo update-alternatives --install /usr/bin/jhsdb jhsdb /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jhsdb 1
+sudo update-alternatives --install /usr/bin/jinfo jinfo /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jinfo 1
+sudo update-alternatives --install /usr/bin/jlink jlink /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jlink 1
+sudo update-alternatives --install /usr/bin/jmod jmod /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jmod 1 
+sudo update-alternatives --install /usr/bin/jrunscript jrunscript /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jrunscript 1
+sudo update-alternatives --install /usr/bin/jstack jstack /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jstack 1
+sudo update-alternatives --install /usr/bin/jstatd jstatd /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/jstatd 1
+sudo update-alternatives --install /usr/bin/pack200 pack200 /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/pack200 1
+sudo update-alternatives --install /usr/bin/rmid rmid /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/rmid 1
+sudo update-alternatives --install /usr/bin/serialver serialver /usr/lib/jvm/sapmachine-jdk-11.0.6.0.1/bin/serialver 1
+```
